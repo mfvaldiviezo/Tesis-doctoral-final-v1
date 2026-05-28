@@ -18,9 +18,9 @@ build/
 env/
 venv/
 
-# ── Outputs del framework (generados en runtime) ─────────────────────────────
-outputs/
-*.zip           # Modelos guardados por SB3
+# ── Outputs del framework (permitir trackear modelos y reportes) ─────────────
+# outputs/
+# *.zip           # Modelos guardados por SB3
 
 # ── Datos sensibles / crudos ─────────────────────────────────────────────────
 data/raw/*
@@ -28,8 +28,8 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 
-# ── Configuraciones SUMO de red (pueden ser grandes) ─────────────────────────
-sumo_configs/networks/*.net.xml
+# ── Configuraciones SUMO de red (permitir trackear barcelona.net.xml y quito.net.xml) ─────────────────────────
+# sumo_configs/networks/*.net.xml
 sumo_configs/routes/*.rou.xml
 
 # ── Jupyter ──────────────────────────────────────────────────────────────────
